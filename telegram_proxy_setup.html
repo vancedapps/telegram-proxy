@@ -1,0 +1,162 @@
+<DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Telegram SOCKS5 Proxy Setup</title> 
+<script src="https://cdn.tailwindcss.com"></script> 
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script> 
+<script> 
+tailwind.config = { 
+  theme: { 
+    extend: { 
+      animation: { 
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite', 
+      } 
+    } 
+  } 
+} 
+</script> 
+</head> 
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen"> 
+<div class="container mx-auto px-4 py-8"> 
+<div class="text-center mb-8"> 
+<div class="flex justify-center items-center gap-3 mb-4"> 
+<div class="p-3 bg-blue-500 rounded-full"> 
+<i data-lucide="wifi" class="w-8 h-8 text-white"></i> 
+</div> 
+<h1 class="text-4xl font-bold text-gray-800">Telegram SOCKS5 Proxy</h1> 
+</div> 
+<p class="text-lg text-gray-600 max-w-2xl mx-auto">Your secure Cloudflare Warp SOCKS5 proxy is ready to use. Click the button below to automatically configure Telegram or set it up manually.</p> 
+</div> 
+<div class="max-w-4xl mx-auto mb-8"> 
+<div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden"> 
+<div class="bg-gradient-to-r from-green-500 to-emerald-500 px-6 py-4"> 
+<div class="flex items-center gap-3"> 
+<div class="p-2 bg-white/20 rounded-lg"> 
+<i data-lucide="activity" class="w-5 h-5 text-white"></i> 
+</div> 
+<div> 
+<h3 class="text-white font-semibold text-lg">Proxy Status</h3> 
+<p class="text-green-100 text-sm">Server running on 127.0.0.1:7777</p> 
+</div> 
+<div class="ml-auto"> 
+<span class="inline-flex items-center gap-2 px-3 py-1 bg-white/20 rounded-full text-white text-sm"> 
+<div class="w-2 h-2 bg-white rounded-full animate-pulse-slow"></div> 
+Online 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<div class="max-w-2xl mx-auto mb-8"> 
+<div class="bg-white rounded-xl shadow-lg border border-gray-200 p-6"> 
+<div class="text-center"> 
+<div class="mb-4"> 
+<div class="inline-flex p-3 bg-telegram-blue bg-blue-500 rounded-full mb-3"> 
+<i data-lucide="zap" class="w-6 h-6 text-white"></i> 
+</div> 
+<h3 class="text-xl font-semibold text-gray-800 mb-2">Quick Setup</h3> 
+<p class="text-gray-600 mb-4">Click the button below to automatically configure Telegram proxy</p> 
+</div> 
+<a href="tg://socks?server=127.0.0.1&port=7777" class="inline-flex items-center justify-center gap-3 w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-200 transform hover:scale-105 hover:shadow-lg"> 
+<i data-lucide="smartphone" class="w-5 h-5"></i> 
+Setup Telegram Proxy 
+</a> 
+</div> 
+</div> 
+</div> 
+<div class="max-w-4xl mx-auto mb-8"> 
+<div class="bg-amber-50 border border-amber-200 rounded-xl p-6"> 
+<div class="flex items-start gap-4"> 
+<div class="p-2 bg-amber-100 rounded-lg flex-shrink-0"> 
+<i data-lucide="info" class="w-5 h-5 text-amber-600"></i> 
+</div> 
+<div> 
+<h4 class="font-semibold text-amber-800 mb-2">Important Information</h4> 
+<ul class="text-amber-700 space-y-1 text-sm"> 
+<li class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4"></i> If the proxy isn't working immediately, please wait about 30 seconds for the script to initialize the connection</li> 
+<li class="flex items-center gap-2"><i data-lucide="network" class="w-4 h-4"></i> Other computers in your LAN can also use this proxy by connecting to your computer's IP address on port 7777</li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+<div class="max-w-4xl mx-auto"> 
+<div class="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden"> 
+<div class="bg-gray-50 px-6 py-4 border-b border-gray-200"> 
+<div class="flex items-center gap-3"> 
+<div class="p-2 bg-gray-200 rounded-lg"> 
+<i data-lucide="settings" class="w-5 h-5 text-gray-600"></i> 
+</div> 
+<h3 class="text-lg font-semibold text-gray-800">Manual Configuration</h3> 
+</div> 
+</div> 
+<div class="p-6"> 
+<p class="text-gray-600 mb-6">If auto-setup doesn't work, configure the proxy manually in Telegram settings:</p> 
+<div class="grid md:grid-cols-2 gap-6"> 
+<div class="space-y-4"> 
+<div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg"> 
+<i data-lucide="server" class="w-5 h-5 text-blue-500"></i> 
+<div> 
+<span class="text-sm font-medium text-gray-700">Type:</span> 
+<span class="ml-2 text-gray-900 font-mono">SOCKS5</span> 
+</div> 
+</div> 
+<div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg"> 
+<i data-lucide="globe" class="w-5 h-5 text-blue-500"></i> 
+<div> 
+<span class="text-sm font-medium text-gray-700">Server:</span> 
+<span class="ml-2 text-gray-900 font-mono">127.0.0.1</span> 
+</div> 
+</div> 
+<div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg"> 
+<i data-lucide="hash" class="w-5 h-5 text-blue-500"></i> 
+<div> 
+<span class="text-sm font-medium text-gray-700">Port:</span> 
+<span class="ml-2 text-gray-900 font-mono">7777</span> 
+</div> 
+</div> 
+</div> 
+<div class="space-y-4"> 
+<div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg"> 
+<i data-lucide="user" class="w-5 h-5 text-blue-500"></i> 
+<div> 
+<span class="text-sm font-medium text-gray-700">Username:</span> 
+<span class="ml-2 text-gray-900 italic">(empty)</span> 
+</div> 
+</div> 
+<div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg"> 
+<i data-lucide="key" class="w-5 h-5 text-blue-500"></i> 
+<div> 
+<span class="text-sm font-medium text-gray-700">Password:</span> 
+<span class="ml-2 text-gray-900 italic">(empty)</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+<div class="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg"> 
+<div class="flex items-start gap-3"> 
+<i data-lucide="wifi" class="w-5 h-5 text-blue-500 mt-0.5"></i> 
+<div> 
+<h5 class="font-medium text-blue-800 mb-1">LAN Network Usage</h5> 
+<p class="text-blue-700 text-sm">Other devices on your local network can use this proxy by replacing <code class="bg-blue-100 px-1 rounded text-xs">127.0.0.1</code> with your computer's IP address (e.g., <code class="bg-blue-100 px-1 rounded text-xs">192.168.1.100:7777</code>)</p> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<div class="text-center mt-12 pb-8"> 
+<div class="inline-flex items-center gap-2 text-gray-500 text-sm"> 
+<i data-lucide="shield" class="w-4 h-4"></i> 
+Powered by Cloudflare Warp + sing-box 
+</div> 
+</div> 
+</div> 
+<script> 
+lucide.createIcons(); 
+</script> 
+</body> 
+</html> 

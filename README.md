@@ -1,3 +1,19 @@
+<!-- 🌐 Language Translations -->
+<p align="right">
+  <b>Languages:</b>
+  <a href="README.zh.md"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.3.2/flags/4x3/cn.svg" width="20" style="vertical-align:middle;"> 中文</a> |
+  <a href="README.ru.md"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.3.2/flags/4x3/ru.svg" width="20" style="vertical-align:middle;"> Русский</a> |
+  <a href="README.fa.md"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.3.2/flags/4x3/ir.svg" width="20" style="vertical-align:middle;"> فارسی</a> |
+  <a href="README.hi.md"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.3.2/flags/4x3/in.svg" width="20" style="vertical-align:middle;"> हिन्दी</a> |
+  <a href="README.th.md"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.3.2/flags/4x3/th.svg" width="20" style="vertical-align:middle;"> ไทย</a> |
+  <a href="README.de.md"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.3.2/flags/4x3/de.svg" width="20" style="vertical-align:middle;"> Deutsch</a> |
+  <a href="README.no.md"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.3.2/flags/4x3/no.svg" width="20" style="vertical-align:middle;"> Norsk</a> |
+  <a href="README.uk.md"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.3.2/flags/4x3/ua.svg" width="20" style="vertical-align:middle;"> Українська</a> |
+  <a href="README.es.md"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.3.2/flags/4x3/es.svg" width="20" style="vertical-align:middle;"> Español</a> |
+  <a href="README.fr.md"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.3.2/flags/4x3/fr.svg" width="20" style="vertical-align:middle;"> Français</a> |
+  <a href="README.vi.md"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.3.2/flags/4x3/vn.svg" width="20" style="vertical-align:middle;"> Tiếng Việt</a>
+</p>
+
 # Cloudflare Warp SOCKS5 Proxy for Telegram
 
 **A professional-grade, self-hosted proxy solution that leverages Cloudflare's Warp infrastructure to provide secure, high-performance connectivity for Telegram and other applications.**
