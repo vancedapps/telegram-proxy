@@ -23,6 +23,9 @@
 
 ## 🏗️ Architecture Overview
 
+![Command-line UI showing the setup process](screenshots/1-cmd-ui.png)
+*The command-line interface guides you through the setup process with clear instructions.*
+
 This solution creates a **local SOCKS5 proxy server** that routes traffic through **Cloudflare's Warp network**, providing several key advantages over traditional proxy methods:
 
 ### 🎯 Core Technology Stack
@@ -87,6 +90,9 @@ The local SOCKS5 server can be **shared across your entire network infrastructur
 - **Antivirus**: Whitelist for sing-box-plus.exe (if required)
 
 ## 🚀 Quick Start Guide
+
+![Successful setup screen](screenshots/2-success-screen.png)
+*Success screen indicating the proxy is ready for use.*
 
 ### Initial Deployment
 
@@ -172,6 +178,10 @@ The local SOCKS5 server can be **shared across your entire network infrastructur
 ```
 
 ## 📱 Client Configuration
+
+![Modern HTML configuration interface for Telegram proxy](screenshots/3-telegram-proxy-config.png)
+
+*Modern HTML interface for easy Telegram proxy configuration.*
 
 ### Telegram Desktop
 1. **Access Settings**: `Settings` → `Advanced` → `Connection Type`
